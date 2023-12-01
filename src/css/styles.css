@@ -1,0 +1,233 @@
+/* general to all pages*/
+
+body{
+    font-family:'Merriweather', serif;;
+    font-size:25px;
+    margin:0;
+    background-color: #191919;
+    color:#8e8e8e;
+
+}
+header{
+    margin:0 0;
+    color:white;
+}
+.navigation_bar{
+    display:flex;
+    background-color:#333;
+    padding:15px 0;
+    justify-content:flex-end;
+    gap:10px;
+    align-items:center;
+    margin:0;
+
+}
+.nav{
+    display:flex;
+    list-style:none;
+}
+.nav li{
+    margin-right:70px;
+    color:white;
+
+
+}
+.toggle-menu{
+    display:none;
+
+}
+
+
+.menu-icon{
+    display:none;
+    cursor:pointer;
+    font-size:40px;
+
+}
+@media only screen and (max-width:600px){
+    .nav{
+        display:none;
+        flex-direction:column;
+        position:absolute;
+        width:100%;
+        top:30px;
+        left:0;
+        background-color:#333;
+    }
+    .toggle-menu:checked + .nav{
+        display:flex;
+    }
+    .menu-icon{
+        display:block;
+    }
+    .nav li{
+        margin-right:0;
+        margin-bottom:10px;
+    }
+}
+
+a{
+    color:rgba(255, 255, 255, 0.762);
+}
+ a:active{
+    color:blue;
+    text-decoration: underline;
+}
+a:hover{
+    color:hotpink;
+
+    
+}
+a:visited{
+    color:green;
+}
+
+
+#toggle-menu{
+    display:none;
+}
+#toggle-menu:checked ~ .nav{
+    display: block;
+}
+
+.current_page{
+    text-align:left;
+    padding:15px 15px 0 5px;
+    border: 2px solid;
+    box-sizing: content-box;
+    width:60%;
+    margin:0;
+    font-size:10px;
+
+}
+.current_page h1{
+    margin-bottom:5px;
+}
+header{
+    position:relative;
+}
+img{
+    width:100%;
+    max-width:400px;
+    height:16rem;
+    border-radius: 80%;
+    display: block;
+    margin:0 auto;
+    width:60%;
+}
+p{
+    margin-top:20px;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+}
+.contact_button{
+    text-align:center;
+    margin-top:18px;
+}
+
+main{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    padding:10px;
+    margin:4%;
+
+}
+
+
+
+footer{
+    height:10%;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 10;
+    margin:0;
+    background-color:#282A35;
+    color:#f1f1f1;
+    text-align:center;
+    
+
+}
+footer p{
+    border:solid 2px grey;
+    display:inline-flex;
+}
+/* specific to Home page*/
+
+.home_main{
+    display:flex;
+    align-items: center;
+    text-align:center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+
+
+/* specific to Hobbies page*/
+.hobbies_main{
+    display:flex;
+    flex-wrap:nowrap;
+    flex-direction: column;
+}
+section video {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+section audio{
+    margin:0 auto;
+    display:block;
+}
+section img{
+    height:12rem;
+}
+
+/* specific to experience page*/
+.experience_main {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+
+}
+table td{
+    padding:5px;
+    text-align:left;
+}
+
+/* specific to contact page*/
+.contact_main{
+    display:flex;
+    flex-direction:column
+
+}
+
+.icon_links{
+    display:flex;
+    justify-content:space-between;
+    margin:auto -4%;
+
+}
+.icon_links img{
+    all:initial;
+    width:50px;
+    height:50px;
+    margin-left:5px;
+}
+.phone{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items:center ;
+}
+.phone img {
+    all:initial;
+    width:70px;
+    height:70px;
+    padding-right:10px;
+}
+
+
+/* specific to about page*/
