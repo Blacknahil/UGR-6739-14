@@ -96,7 +96,7 @@ a{
     text-decoration: none;
 }
 a:active{
-    color:rgb(18, 194, 194);
+    color:rgba(0, 255, 255, 0.497);
     text-decoration: none;
 }
 a:hover{
@@ -104,7 +104,7 @@ a:hover{
         text-decoration: underline;
 }
 a:visited{
-    color:rgb(28, 144, 144);
+    color:rgba(0, 255, 255, 0.68);
 }
 
 
