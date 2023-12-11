@@ -214,17 +214,25 @@ audio{
 .cycling{
     position: relative;
 }
+
+
 /* 4.experience  page only */
-table td{
-    padding:5px;
-    text-align:left;
-    border:solid 1px #fff;
+td tr{
+    padding:2px;
+    border:solid 1px rgb(141, 129, 129);
+    margin:0;
 }
+
 .part_3 ul{
     margin:0;
 }
-table .skills{
+
+table {
     border-collapse:collapse;
+    text-align:left;
+    font-size: 1rem;
+    position: relative;
+    margin-left: 10px;
 }
 
 
