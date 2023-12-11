@@ -9,18 +9,18 @@
 <body>
     
     <header>
-        <nav class="navigation_bar">
+        <nav class="navbar">
 
-            <input type="checkbox" id="toggle-menu" class="toggle-menu">
-            <label class="menu-icon" for="toggle-menu">&#9776;</label>
+            <input type="checkbox" id="toggle" class="navbar__toggle">
+            <label class="navbar__icon" for="toggle">&#9776;</label>
 
-            <ul class="nav">
+            <ul class="navbar__list">
                 <li><a href="home.html" >Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="experience.html">Expierence</a></li>
                 <li><a href="hobbies.html">Hobbies</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li class="resume"><a href="images/resume.pdf" download="nahoms_resume.pdf">Resume</a></li>
+                <li class="navbar__list__resume"><a href="images/resume.pdf" download="nahoms_resume.pdf">Resume</a></li>
             </ul> 
         </nav>
         <div class="current_page">
@@ -29,8 +29,8 @@
     </header>
 
     <main class="about_main">
-        <section class="memory">
-        <div class="text">
+        <section class="about_main__memory">
+        <div class="about_main__memory--text">
         <p>
             Hailing from a quaint town 600 km south-west of Addis Ababa, my roots were embedded in simplicity,
              with limited access to electricity and the internet. A spark of passion for software engineering was 
@@ -40,7 +40,7 @@
             to bring my town into the global digital fold.
         </p>
     </div>
-    <div class="memory_video">
+    <div class="about_main__memory--video">
         <video controls autoplay muted loop>
             <source src="images/memories.mp4" type="video/mp4">
         </video>
