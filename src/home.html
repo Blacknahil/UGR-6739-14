@@ -9,16 +9,18 @@
 <body>
     
     <header>
-        <nav class="navigation_bar">
-            <input type="checkbox" id="toggle-menu" class="toggle-menu">
-            <label class="menu-icon" for="toggle-menu">&#9776;</label>
-            <ul class="nav">
+        <nav class="navbar">
+
+            <input type="checkbox" id="toggle" class="navbar__toggle">
+            <label class="navbar__icon" for="toggle">&#9776;</label>
+
+            <ul class="navbar__list">
                 <li><a href="home.html" >Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="experience.html">Expierence</a></li>
                 <li><a href="hobbies.html">Hobbies</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li class="resume"><a href="images/resume.pdf" download="nahoms_resume.pdf">Resume</a></li>
+                <li class="navbar__list__resume"><a href="images/resume.pdf" download="nahoms_resume.pdf">Resume</a></li>
             </ul> 
         </nav>
         
@@ -28,7 +30,7 @@
     </header>
 
     <main class="home_main">
-        <div class="flex home-content">
+        <div class="home_main__content home_main__content--flex">
         <img src="images/nahom.jpg" alt="nahom_profile">
 
         <p>
@@ -44,7 +46,7 @@
              a force that propels me towards my goals with an unyielding determination.
             </p>
             </div>
-            <h4 class="contact_button">
+            <h4 class="home_main__contact_button">
                 <a href="contact.html">Contact me</a>
             </h4>
 
