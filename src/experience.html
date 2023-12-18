@@ -4,129 +4,153 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 <body>
+
     <header>
-        <nav class="navigation_bar">
+        <nav class="navbar is-dark hero is-fullwidth" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand ">
 
-            <input type="checkbox" id="toggle-menu" class="toggle-menu">
-            <label class="menu-icon" for="toggle-menu">&#9776;</label>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
 
-            <ul class="nav">
-                <li><a href="home.html" >Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="experience.html">Expierence</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="images/resume.pdf" download="nahoms_resume.pdf">Resume</a></li>
-            </ul> 
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="home.html" class="navbar-item"> Home</a>
+                    <a href="about.html" class="navbar-item">About</a>
+                    <a href="experience.html" class="navbar-item">Experience</a>
+                    <a href="hobbies.html" class="navbar-item">Hobbies</a>
+                    <a href="contact.html" class="navbar-item">Contact</a>
+                    <a href="images/resume.pdf" download="nahoms_resume.pdf" class="navbar-item">Resume</a>
+                </div>
+            </div>
         </nav>
-        <div class="current_page">
-        <h1>My Experiences</h1>
-        </div>
     </header>
 
-    <main class="experience_main">
-        <article class="part_1">
-            <h2>Projetcs I did </h2>
-            <p>
-                Throughout internships, I delved into diverse projects, including simulating 
-                the Linux directory structure using tree data structures. My personal GitHub showcases
-                 independently developed websites, demonstrating proficiency in HTML, CSS, and JavaScript. 
-                 Notably, the ongoing project "Tutor Linkup" underscores my commitment to creating innovative 
-                 web applications that bridge education and technology, showcasing my adaptability and problem-solving skills.
-            </p>
-        </article>
+    <section class="hero is-primary mt-2">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">
+                    My Experiences
+                </h1>
+            </div>
+        </div>
+    </section>
 
-        <article class="part_2">
-            <h2>Programming Skills</h2>
-            <p>
-                My journey in programming is a tale of continuous growth and innovation. 
-                From mastering languages like Python and JavaScript to architecting scalable web solutions, 
-                each project has been a stepping stone. With a passion for problem-solving, 
-                I thrive on turning complex challenges into elegant, efficient code.
-            </p>
-            <table>
-                <tr>
-                    <td>
-                        <table>
+    <section class="section">
+        <div class="container columns">
+
+
+
+                    <article class="column">
+                        <h2 class="title is-2">Projects I Did</h2>
+                        <p>
+                            Throughout internships, I delved into diverse projects, including simulating 
+                            the Linux directory structure using tree data structures. My personal GitHub showcases
+                             independently developed websites, demonstrating proficiency in HTML, CSS, and JavaScript. 
+                             Notably, the ongoing project "Tutor Linkup" underscores my commitment to creating innovative 
+                             web applications that bridge education and technology, showcasing my adaptability and problem-solving skills.
+                        </p>
+                    </article>
+
+
+                    <article class="column">
+                        <h2 class="title is-2">Programming Skills</h2>
+                       
+                        <p>
+                            My journey in programming is a tale of continuous growth and innovation. 
+                            From mastering languages like Python and JavaScript to architecting scalable web solutions, 
+                            each project has been a stepping stone. With a passion for problem-solving, 
+                            I thrive on turning complex challenges into elegant, efficient code.
+                        </p>
+                        <table class="skills">
                             <tr>
                                 <td>
-                                    Python
+                                    <table class="skills" >
+                                        <tr>
+                                            <td>
+                                                Python
+                                            </td>
+                                            <td> 
+                                                🌟🌟🌟🌟
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                CSS and HTML
+                                            </td>
+                                            <td>
+                                                🌟 🌟
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                JavaScript
+                                            </td>
+                                            <td>
+                                                🌟 🌟 🌟 🌟
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </td>
-                                <td> 
-                                    🌟🌟🌟🌟
-                                </td>
-                            </tr>
-                            <tr>
                                 <td>
-                                    CSS and HTML
-                                </td>
-                                <td>
-                                    🌟 🌟
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    JavaScript
-                                </td>
-                                <td>
-                                    🌟 🌟 🌟 🌟
+                                    <table class="skills">
+                                        <tr>
+                                            <td>
+                                                PHP
+                                            </td>
+                                            <td> 
+                                                🌟 🌟 🌟
+                                            </td>
+                                        </tr>
+                                        <tr> 
+                                            <td>
+                                                MySQL
+                                            </td>
+                                            <td>
+                                                🌟 🌟
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Flutter
+                                            </td>
+                                            <td>
+                                                🌟 🌟 🌟
+                                            </td>
+                                        </tr>
+                                    </table>
                                 </td>
                             </tr>
                         </table>
-                    </td>
-                    <td>
-                        <table>
-                            <tr>
-                                <td>
-                                    PHP
-                                </td>
-                                <td> 
-                                    🌟 🌟 🌟
-                                </td>
-                            </tr>
-                            <tr> 
-                                <td>
-                                    MySQL
-                                </td>
-                                <td>
-                                    🌟 🌟
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>
-                                    Flutter
-                                </td>
-                                <td>
-                                    🌟 🌟 🌟
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </article>
+                    </article>
 
-        <article class="part_3">
-            <h2>Soft Skills</h2>
-            <p>With a foundation in empathy and adaptability, my soft skills have flourished through 
-                diverse collaborations and challenging projects. I've honed effective communication and 
-                problem-solving abilities, fostering a dynamic approach to teamwork and a keen capacity for innovation.
-            </p>
-            <ul>
-                <li>Strong Communication</li>
-                <li>Problem Solving</li>
-                <li>Time Managemnt</li>
-                <li>Team Collaboration</li>
-            </ul>
-        </article>
+                    <article class="column">
+                        <h2 class="title is-2">Soft Skills</h2>
+                        <p>
+                            With a foundation in empathy and adaptability, my soft skills have flourished through 
+                            diverse collaborations and challenging projects. I've honed effective communication and 
+                            problem-solving abilities, fostering a dynamic approach to teamwork and a keen capacity for innovation.
+                        </p>
+                    </article>
 
-    </main>
+            </div>
 
-    <footer>
-        <p>Copyright@nahom 2023</p>
+        </div>
+    </section>
+
+    <footer class="footer hero is-info">
+        <div class="content has-text-centered">
+            <p>Copyright@nahom 2023</p>
+        </div>
     </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bulma@0.9.3/js/bulma.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

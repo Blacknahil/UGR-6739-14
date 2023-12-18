@@ -3,60 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>contact</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Contact</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 <body>
+
     <header>
-        <nav class="navigation_bar">
+        <nav class="navbar is-dark hero is-fullwidth" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand ">
 
-            <input type="checkbox" id="toggle-menu" class="toggle-menu">
-            <label class="menu-icon" for="toggle-menu">&#9776;</label>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
 
-            <ul class="nav">
-                <li><a href="home.html" >Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="experience.html">Expierence</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="images/resume.pdf" download="nahoms_resume.pdf">Resume</a></li>
-            </ul> 
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="home.html" class="navbar-item"> Home</a>
+                    <a href="about.html" class="navbar-item">About</a>
+                    <a href="experience.html" class="navbar-item">Experience</a>
+                    <a href="hobbies.html" class="navbar-item">Hobbies</a>
+                    <a href="contact.html" class="navbar-item">Contact</a>
+                    <a href="images/resume.pdf" download="nahoms_resume.pdf" class="navbar-item">Resume</a>
+                </div>
+            </div>
         </nav>
-
     </header>
 
-    <main class="contact_main">
-
-        <p>I am temporarily in AAU. My permanent residence is in my Home town, Masha,Sheka.</p>
-        <address>
-            Addis Ababa University 
-            5 kilo, Arada, Addis Ababa Ethiopia
-        </address>
-        <div class="phone">
-        <img src="images/phone.png" alt="phone-icon">
-        <h2> +251961873109</h2>
+    <section class="hero is-primary mt-2">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">
+                    Contact
+                </h1>
+            </div>
         </div>
+    </section>
 
-        <p>
-            Don't hesitate to get in touch for any questions, project collaborations, or
-             even just a casual conversation. Your thoughts are important, and I'm eager to 
-             connect with you. Whether you have specific inquiries or simply want to say hello,
-              I welcome the opportunity to engage and explore potential collaborations. 
-              Feel free to drop me a message, and let's start a conversation. I appreciate your interest 
-              and look forward to hearing from you soon!
-            </p>
+    <section class="section">
+        <div class="container">
 
-        <h3>Contacts</h3>
-        <div class="icon_links">
-        <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebbook icon"></a>
-        <a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter icon"></a>
-        <a href="https://www.linkedin.com/in/nahom-garefo-304306221/"><img src="images/linkidin.png" alt="linkidin-icon"></a>
-        <a href="mailto:nahomgarefo@gmail.com"><img src="images/gmail.png" alt="gmail icon"></a>
+            <div class="columns">
+                <div class="column is-two-thirds">
+
+                        <h2 class="title is-2">Address</h2>
+
+                        <p>I am temporarily in AAU. My permanent residence is in my Home town, Masha, Sheka.</p>
+                        <address>
+                            Addis Ababa University 
+                            5 kilo, Arada, Addis Ababa Ethiopia
+                        </address>
+                        <div class="is-flex mt-3">
+                            <div>
+                            <img src="images/phone.png" alt="phone-icon">
+                            </div>
+                            <div>
+                            <h3 class="title is-3 mt-6"> +251961873109</h3>
+                            </div>
+                        </div>
+
+
+                </div>
+
+                <div class="column">
+                        <p>
+                            Don't hesitate to get in touch for any questions, project collaborations, or
+                            even just a casual conversation. Your thoughts are important, and I'm eager to 
+                            connect with you. Whether you have specific inquiries or simply want to say hello,
+                            I welcome the opportunity to engage and explore potential collaborations. 
+                            Feel free to drop me a message, and let's start a conversation. I appreciate your interest 
+                            and look forward to hearing from you soon!
+                        </p>
+
+                        <h3>Contacts</h3>
+                        <div class="icon-text is-mobile is-centered mt-4">
+                            <span class="icon is-large mr-5">
+                            <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook icon"></a>
+                        </span>
+                        <span class="icon is-large mr-5">
+                            <a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter icon"></a>
+                            </span>
+                            <span class="icon is-large mr-5">
+                            <a href="https://www.linkedin.com/in/nahom-garefo-304306221/"><img src="images/linkidin.png" alt="linkedin-icon"></a>
+                            </span>
+                            <span class="icon is-large mr-5">
+                            <a href="mailto:nahomgarefo@gmail.com"><img src="images/gmail.png" alt="gmail icon"></a>
+                            </span>
+                        </div>
+
+                </div>
+            </div>
+
         </div>
-    </main>
+    </section>
 
-    <footer>
-        <p>Copyright@nahom 2023</p>
+    <footer class="footer hero is-info">
+        <div class="content has-text-centered">
+            <p>Copyright@nahom 2023</p>
+        </div>
     </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bulma@0.9.3/js/bulma.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

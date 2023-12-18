@@ -3,53 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home </title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 <body>
-    
+
+
     <header>
-        <nav class="navigation_bar">
-            <input type="checkbox" id="toggle-menu" class="toggle-menu">
-            <label class="menu-icon" for="toggle-menu">&#9776;</label>
-            <ul class="nav">
-                <li><a href="home.html" >Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="experience.html">Expierence</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="images/resume.pdf" download="nahoms_resume.pdf">Resume</a></li>
-            </ul> 
+        <nav class="navbar is-dark hero is-fullwidth" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand ">
+
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="home.html" class="navbar-item"> Home</a>
+                    <a href="about.html" class="navbar-item">About</a>
+                    <a href="experience.html" class="navbar-item">Experience</a>
+                    <a href="hobbies.html" class="navbar-item">Hobbies</a>
+                    <a href="contact.html" class="navbar-item">Contact</a>
+                    <a href="images/resume.pdf" download="nahoms_resume.pdf" class="navbar-item">Resume</a>
+                </div>
+            </div>
         </nav>
-        
-        <div class="current_page">
-        <h1>Home</h1>
-    </div>
     </header>
 
-    <main class="home_main">
-        <img src="images/nahom.jpg" alt="nahom_profile">
 
-        <p>
-            My name is nahom Garefo. I am currently a third year software engineering student at <a href="http://www.aau.edu.et/">Addis Ababa University.</a>
-            In the realm of coding and programming, my passion burns like a relentless flame, an unwavering devotion that fuels my every endeavor. 
-            The world of lines and algorithms is my canvas, and with each keystroke, I paint a masterpiece of logic and innovation.
-            Devotion is the heartbeat of my journey. Every project is a pilgrimage, and every bug is a challenge waiting to be conquered. 
-            The late nights spent debugging, the countless lines of code written and rewritten – they are the building blocks of my commitment to excellence.
-             I am not merely a coder; I am an architect shaping the future with lines of code.
-             <br>
-             In a world where technology evolves at an unprecedented pace, my love for coding is the constant, the anchor that keeps me grounded yet propels me forward. 
-             It's not just about writing code; it's about crafting solutions, pushing boundaries, and leaving an indelible mark on the digital landscape. My devotion to this craft is unwavering, 
-             a force that propels me towards my goals with an unyielding determination.
-            </p>
-            <h4 class="contact_button">
-                <a href="contact.html">Contact me</a>
-            </h4>
+    <section class="hero is-primary mt-2">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">
+                    Home
+                </h1>
+            </div>
+        </div>
+    </section>
 
-    </main>
+    <section class="section">
+        <div class="container">
 
-    <footer>
-        <p>Copyright@nahom 2023</p>
+            <div class="columns">
+                <div class="column image has-text-centered">
+                    <img src="images/nahom.jpg" alt="nahom_profile" class="image is-rounded is-responsive is-max-widescreen is-max-mobile" style=" max-height:450px; max-width:80%;">
+                </div>
+                <div class="column">
+                    <p>
+                        My name is nahom Garefo. I am currently a third year software engineering student at <a href="http://www.aau.edu.et/">Addis Ababa University.</a>
+                        In the realm of coding and programming, my passion burns like a relentless flame, an unwavering devotion that fuels my every endeavor. 
+                        The world of lines and algorithms is my canvas, and with each keystroke, I paint a masterpiece of logic and innovation.
+                        Devotion is the heartbeat of my journey. Every project is a pilgrimage, and every bug is a challenge waiting to be conquered. 
+                        The late nights spent debugging, the countless lines of code written and rewritten – they are the building blocks of my commitment to excellence.
+                         I am not merely a coder; I am an architect shaping the future with lines of code.
+                         <br>
+                         In a world where technology evolves at an unprecedented pace, my love for coding is the constant, the anchor that keeps me grounded yet propels me forward. 
+                         It's not just about writing code; it's about crafting solutions, pushing boundaries, and leaving an indelible mark on the digital landscape. My devotion to this craft is unwavering, 
+                         a force that propels me towards my goals with an unyielding determination.
+                    </p>
+                    <button class="button is-light is-link is-medium">
+                    <h4 class="link-hover">
+                        <a href="contact.html">Contact me</a>
+                    </h4>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer hero is-info">
+        <div class="content has-text-centered">
+            <p>Copyright@nahom 2023</p>
+        </div>
     </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bulma@0.9.3/js/bulma.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

@@ -3,61 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me </title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>About Me</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
 </head>
 <body>
-    
     <header>
-        <nav class="navigation_bar">
+        <nav class="navbar is-dark hero is-fullwidth" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand ">
 
-            <input type="checkbox" id="toggle-menu" class="toggle-menu">
-            <label class="menu-icon" for="toggle-menu">&#9776;</label>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="true" data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
 
-            <ul class="nav">
-                <li><a href="home.html" >Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="experience.html">Expierence</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="images/resume.pdf" download="nahoms_resume.pdf">Resume</a></li>
-            </ul> 
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="home.html" class="navbar-item"> Home</a>
+                    <a href="about.html" class="navbar-item">About</a>
+                    <a href="experience.html" class="navbar-item">Experience</a>
+                    <a href="hobbies.html" class="navbar-item">Hobbies</a>
+                    <a href="contact.html" class="navbar-item">Contact</a>
+                    <a href="images/resume.pdf" download="nahoms_resume.pdf" class="navbar-item">Resume</a>
+                </div>
+            </div>
         </nav>
-        <div class="current_page">
-        <h1>About Nahom </h1>
-        </div>
     </header>
 
-    <main>
-        <p>
 
-            Hailing from a quaint town 600 km south-west of Addis Ababa, my roots were embedded in simplicity,
-             with limited access to electricity and the internet. A spark of passion for software engineering was 
-             ignited during a transformative summer camp organized by Jelani Nelson. Despite the challenges of catching 
-             up with peers, I embraced the difficulty, recognizing that the road ahead would be far from easy.
-              Driven by the desire to expand my skills and elevate my community, my journey is fueled by a commitment 
-            to bring my town into the global digital fold.
-        </p>
-        <section class="memory">
-            
-
-        <video controls autoplay muted loop>
-            <source src="images/memories.mp4" type="video/mp4">
-        </video>
-        <h2>Childhood Memories</h2>
-
-        <p>
-            In the heart of the Ethiopian jungle, I, a wild spirit, thrived with no concept of classrooms. 
-            Days were an adventure of playing amidst vibrant foliage until a summer camp the summer camp. T
-            ransitioning from carefree jungle wanderer to aspiring academician wasn't easy, mirroring the untamed terrain I grew up in. 
-            Yet, armed with resilience, I pursued education, becoming a respected figure in my small town. Now, other kids look to me, 
-            bridging the gap between the simplicity of our jungle haven and the world of knowledge.
-        </p>
+    <section class="hero is-primary mt-2">
+        <div class="hero-body">
+            <div class="container">
+                <h1 class="title is-1">
+                    About Nahom
+                </h1>
+            </div>
+        </div>
     </section>
-    </main>
 
-    <footer>
-        <p>Copyright@nahom 2023</p>
+    <section class="section">
+        <div class="container">
+
+            <main class="about_main">
+                <section class="about_main__memory columns">
+                    <div class="column is-two-thirds">
+                        <div class="about_main__memory--text">
+                            <p>
+                                Hailing from a quaint town 600 km south-west of Addis Ababa, my roots were embedded in simplicity,
+                                with limited access to electricity and the internet. A spark of passion for software engineering was 
+                                ignited during a transformative summer camp organized by Jelani Nelson. Despite the challenges of catching 
+                                up with peers, I embraced the difficulty, recognizing that the road ahead would be far from easy.
+                                Driven by the desire to expand my skills and elevate my community, my journey is fueled by a commitment 
+                                to bring my town into the global digital fold.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div class="about_main__memory--video">
+                            <video controls autoplay muted loop>
+                                <source src="images/memories.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </section>
+
+                <h2 class="title is-2">Childhood Memories</h2>
+
+                <p>
+                    In the heart of the Ethiopian jungle, I, a wild spirit, thrived with no concept of classrooms. 
+                    Days were an adventure of playing amidst vibrant foliage until a summer camp the summer camp. T
+                    ransitioning from carefree jungle wanderer to aspiring academician wasn't easy, mirroring the untamed terrain I grew up in. 
+                    Yet, armed with resilience, I pursued education, becoming a respected figure in my small town. Now, other kids look to me, 
+                    bridging the gap between the simplicity of our jungle haven and the world of knowledge.
+                </p>
+            </main>
+
+        </div>
+    </section>
+
+    <footer class="footer hero is-info">
+        <div class="content has-text-centered">
+            <p>Copyright@nahom 2023</p>
+        </div>
     </footer>
+
+    <script defer src="https://cdn.jsdelivr.net/npm/bulma@0.9.3/js/bulma.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    
 </body>
 </html>
