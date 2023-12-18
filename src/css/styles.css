@@ -277,6 +277,7 @@ table {
     align-items:center ;
 }
 /* 6.about page only */
+
 .about_main{
     display:grid;
 }
@@ -417,5 +418,21 @@ table {
 
 
     }
+
 }
 
+
+
+
+
+/* specific to about page*/
+
+.about_main__memory
+.about_main__childhood{
+    opacity:0;
+    transition:opacity 0.5s ease-in-out;
+}
+
+.about_main__memory.active, .about_main__childhood.active{
+    opacity: 1;
+}
