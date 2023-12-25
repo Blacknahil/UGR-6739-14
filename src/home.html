@@ -4,34 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home </title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
+<body class="bg-primary-subtle">
     
     <header>
-        <nav class="navigation_bar">
-            <input type="checkbox" id="toggle-menu" class="toggle-menu">
-            <label class="menu-icon" for="toggle-menu">&#9776;</label>
-            <ul class="nav">
-                <li><a href="home.html" >Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="experience.html">Expierence</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="images/resume.pdf" download="nahoms_resume.pdf">Resume</a></li>
+        <nav class="navbar navbar-expand-md bg-body-tertiary p-4">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNav">
+            <ul class="navbar-nav data-bs-theme-dark nav-tabs ">
+                <li class=" nav-item navbar-brand">
+                    <a href="home.html" class="nav-link active" aria-current="page">Home</a></li>
+                <li class="nav-item navbar-brand">
+                    <a href="about.html" class="nav-link">About</a></li>
+                <li class="nav-item navbar-brand">
+                    <a href="experience.html" class="nav-link">Expierence</a></li>
+                <li class="nav-item navbar-brand">
+                    <a href="hobbies.html" class="nav-link">Hobbies</a></li>
+                <li class="nav-item navbar-brand">
+                    <a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item navbar-brand">
+                    <a href="images/resume.pdf" download="nahoms_resume.pdf" class="nav-link">
+                    <button class="btn btn-outline-success ms-2">Resume</button>
+                </a></li>
             </ul> 
+            </div>
         </nav>
-        
-        <div class="current_page">
-        <h1>Home</h1>
-    </div>
+        <div class="bg-dark text-white me-5">
+            <h1>Home </h1>
+            </div>
     </header>
-
-    <main class="home_main">
-        <img src="images/nahom.jpg" alt="nahom_profile">
-
+    <div class="container bg-primary-subtle">
+    <main class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12 d-flex align-items-center justify-content-center">
+        <img src="images/nahom.jpg" alt="nahom_profile" class="w-100 rounded h-5 img-fluid" style="max-height:350px;">
+    </div>
+    <div class="col-md-8 col-sm-12">
         <p>
-            My name is nahom Garefo. I am currently a third year software engineering student at <a href="http://www.aau.edu.et/">Addis Ababa University.</a>
+            My name is Nahom Garefo. I am currently a third year software engineering student at <a href="http://www.aau.edu.et/">Addis Ababa University.</a>
             In the realm of coding and programming, my passion burns like a relentless flame, an unwavering devotion that fuels my every endeavor. 
             The world of lines and algorithms is my canvas, and with each keystroke, I paint a masterpiece of logic and innovation.
             Devotion is the heartbeat of my journey. Every project is a pilgrimage, and every bug is a challenge waiting to be conquered. 
@@ -42,14 +55,26 @@
              It's not just about writing code; it's about crafting solutions, pushing boundaries, and leaving an indelible mark on the digital landscape. My devotion to this craft is unwavering, 
              a force that propels me towards my goals with an unyielding determination.
             </p>
-            <h4 class="contact_button">
-                <a href="contact.html">Contact me</a>
-            </h4>
+            </div>
+            <div class="inline-flex text-center">
+            <button type="button" class="btn btn-light p-3 mb-2"> <a href="contact.html" class="text-decoration-none">Contact me</a></button> 
+            </div>
+               
+
 
     </main>
+</div>
 
-    <footer>
-        <p>Copyright@nahom 2023</p>
+    <footer class=" fixed-bottom bg-dark text-white text-center py-3">
+        <p class="border border-white border-1 d-inline-block p-2">Copyright@nahom 2023</p>
+        <div class="d-flex justify-content-center flex-wrap gap-2 text-info">
+        <a href="home.html" class="text-decoration-none focus-ring info-link ">Home</a>
+        <a href="about.html" class="text-decoration-none focus-ring info-link">About</a>
+        <a href="experience.html" class="text-decoration-none focus-ring info-link">Experience</a>
+        <a href="contact.html" class="text-decoration-none focus-ring info-link">Contacts</a>
+        <a href="hobbies.html" class="text-decoration-none focus-ring info-link">Hobbies</a>
+        </div>
     </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

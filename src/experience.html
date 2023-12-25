@@ -4,31 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experience</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
     <header>
-        <nav class="navigation_bar">
-
-            <input type="checkbox" id="toggle-menu" class="toggle-menu">
-            <label class="menu-icon" for="toggle-menu">&#9776;</label>
-
-            <ul class="nav">
-                <li><a href="home.html" >Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="experience.html">Expierence</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="images/resume.pdf" download="nahoms_resume.pdf">Resume</a></li>
+        <nav class="navbar navbar-expand-md bg-body-tertiary p-4">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+        <div class="collapse navbar-collapse justify-content-end text-center" id="navbarNav">
+            <ul class="navbar-nav data-bs-theme-dark nav-tabs ">
+                <li class=" nav-item navbar-brand">
+                    <a href="home.html" class="nav-link">Home</a></li>
+                <li class="nav-item navbar-brand">
+                    <a href="about.html" class="nav-link ">About</a></li>
+                <li class="nav-item navbar-brand">
+                    <a href="experience.html" class="nav-link active" aria-current="page">Expierence</a></li>
+                <li class="nav-item navbar-brand">
+                    <a href="hobbies.html" class="nav-link">Hobbies</a></li>
+                <li class="nav-item navbar-brand">
+                    <a href="contact.html" class="nav-link">Contact</a></li>
+                <li class="nav-item navbar-brand">
+                    <a href="images/resume.pdf" download="nahoms_resume.pdf" class="nav-link">
+                    <button class="btn btn-outline-success ms-2">Resume</button>
+                </a></li>
             </ul> 
+            </div>
         </nav>
-        <div class="current_page">
-        <h1>My Experiences</h1>
-        </div>
+        <div class="bg-dark text-white me-5">
+            <h1>My Experiences </h1>
+            </div>
     </header>
 
-    <main class="experience_main">
-        <article class="part_1">
+    <main class="container pb-3 mt-5 ms-5 row">
+        <article class="col-md-6 col-lg-4 col-sm-12">
             <h2>Projetcs I did </h2>
             <p>
                 Throughout internships, I delved into diverse projects, including simulating 
@@ -39,7 +48,7 @@
             </p>
         </article>
 
-        <article class="part_2">
+        <article class="col-md-6 col-lg-4 col-sm-12">
             <h2>Programming Skills</h2>
             <p>
                 My journey in programming is a tale of continuous growth and innovation. 
@@ -47,10 +56,11 @@
                 each project has been a stepping stone. With a passion for problem-solving, 
                 I thrive on turning complex challenges into elegant, efficient code.
             </p>
-            <table>
+            <div class="m-5">
+            <table class="container flex">
                 <tr>
                     <td>
-                        <table>
+                        <table class="table">
                             <tr>
                                 <td>
                                     Python
@@ -78,7 +88,7 @@
                         </table>
                     </td>
                     <td>
-                        <table>
+                        <table class="table">
                             <tr>
                                 <td>
                                     PHP
@@ -107,9 +117,10 @@
                     </td>
                 </tr>
             </table>
+            </div>
         </article>
 
-        <article class="part_3">
+        <article class="col-md-6 col-lg-4 col-sm-12">
             <h2>Soft Skills</h2>
             <p>With a foundation in empathy and adaptability, my soft skills have flourished through 
                 diverse collaborations and challenging projects. I've honed effective communication and 
@@ -124,9 +135,17 @@
         </article>
 
     </main>
-
-    <footer>
-        <p>Copyright@nahom 2023</p>
+    <footer class=" bg-dark text-white text-center py-3">
+        <p class="border border-white border-1 d-inline-block p-2">Copyright@nahom 2023</p>
+        <div class="d-flex justify-content-center flex-wrap gap-2 text-info">
+        <a href="#" class="text-decoration-none focus-ring info-link ">Home</a>
+        <a href="#" class="text-decoration-none focus-ring info-link">About</a>
+        <a href="#" class="text-decoration-none focus-ring info-link">Experience</a>
+        <a href="#" class="text-decoration-none focus-ring info-link">Contacts</a>
+        <a href="#" class="text-decoration-none focus-ring info-link">Hobbies</a>
+        </div>
     </footer>
+    
+    <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
