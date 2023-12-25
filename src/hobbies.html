@@ -6,7 +6,7 @@
     <title>Hobbies</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
+<body class="bg-primary-subtle">
     
     <header>
         <nav class="navbar navbar-expand-md bg-body-tertiary p-4">
@@ -38,10 +38,20 @@
     </header>
     <main class="container pb-3 m-5 row gap-5">
         <div class='row'>
-        <section class="col-lg-4 col-md-6">
+
+            <div id="carouselContainer" class="carousel slide carousel-dark position-relative" data-bs-ride="carousel">
+            <!-- 1 section for my slider -->
+            <div class="carousel-indicators p-10 position-absolute start-40 top-100 ">
+                <button type="button" data-bs-target="#carouselContainer" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselContainer" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselContainer" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+            <div class="carousel-inner">
+
+        <section class=" carousel-item active text-center">
         <h2>Cycling</h2>
         <div>
-        <img src="images/cycling.jpeg" alt="cycling pic" class="w-100">
+        <img src="images/cycling.jpeg" alt="cycling pic" class="w-80">
         </div>
         <p>
             Cycling, an exhilarating blend of fitness and adventure, propels you into the great outdoors.
@@ -53,10 +63,12 @@
         </p>
     </section>
 
-    <section class="col-lg-4 col-md-6">
+    <!-- 2 section for my sliders -->
+
+    <section class=" carousel-item text-center">
         <h2>Playing Football</h2>
         <div class="">
-        <video controls autoplay muted loop class="w-100">
+        <video controls autoplay muted loop class="w-50">
             <source src="images/football.mp4" type="video/mp4">
             Your browser does not support the video tag.
 
@@ -69,10 +81,11 @@
         </p>
     </section>
 
-    <section class="col-lg-4">
+    <!-- third section for my slider -->
+    <section class=" carousel-item text-center">
         <h2>Mountain climbing</h2>
-        <video controls autoplay muted loop class="w-100">
-            <source src="/images/climbing.mp4" type="video/mp4">
+        <video controls autoplay muted loop class="w-50">
+            <source src="images/climbing.mp4" type="video/mp4">
             Your browser does not support the video tag.
 
         </video>
@@ -83,7 +96,7 @@
              climbing an exhilarating and soul-enriching pursuit.
         </p>
         <audio controls loop preload="auto">
-            <source src="images/audio.mp3" type="audio/mp3">
+            <source src="../images/audio.mp3" type="audio/mp3">
             Your browser does not support the audio tag.
           </audio>
           <p>
@@ -92,16 +105,28 @@
           
     </section>
     </div>
+
+    <button class="carousel-control-prev p-5 position-absolute start-0" type="button" data-bs-target="#carouselContainer" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next p-5 position-absolute end-0" type="button" data-bs-target="#carouselContainer" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+    </div>
+    </div>
     </main>
 
     <footer class=" bg-dark text-white text-center py-3">
         <p class="border border-white border-1 d-inline-block p-2">Copyright@nahom 2023</p>
         <div class="d-flex justify-content-center flex-wrap gap-2 text-info">
         <a href="home.html" class="text-decoration-none focus-ring info-link ">Home</a>
-        <a href="#" class="text-decoration-none focus-ring info-link">About</a>
-        <a href="#" class="text-decoration-none focus-ring info-link">Experience</a>
-        <a href="#" class="text-decoration-none focus-ring info-link">Contacts</a>
-        <a href="#" class="text-decoration-none focus-ring info-link">Hobbies</a>
+        <a href="about.html" class="text-decoration-none focus-ring info-link">About</a>
+        <a href="experience.html" class="text-decoration-none focus-ring info-link">Experience</a>
+        <a href="contact.html" class="text-decoration-none focus-ring info-link">Contacts</a>
+        <a href="hobbies.html" class="text-decoration-none focus-ring info-link">Hobbies</a>
         </div>
     </footer>
     

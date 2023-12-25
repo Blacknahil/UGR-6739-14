@@ -6,7 +6,7 @@
     <title>Experience</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
+<body class="bg-primary-subtle">
     <header>
         <nav class="navbar navbar-expand-md bg-body-tertiary p-4">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,8 +36,19 @@
             </div>
     </header>
 
-    <main class="container pb-3 mt-5 ms-5 row">
-        <article class="col-md-6 col-lg-4 col-sm-12">
+    <main class="container pb-3 mt-5 ms-5 ">
+        
+        <div id="carouselContainer" class="carousel slide carousel-dark position-relative" data-bs-ride="carousel">
+
+            <div class="carousel-indicators position-absolute start-40 top-100">
+                <button type="button" data-bs-target="#carouselContainer" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselContainer" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselContainer" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+            <div class="carousel-inner">
+        <!-- first section on my slider  -->
+        <div class="carousel-item active text-center d-flex-column align-content-center m-10 p-10">
+        <article class="d-flex-column align-content-center m-10 p-10">
             <h2>Projetcs I did </h2>
             <p>
                 Throughout internships, I delved into diverse projects, including simulating 
@@ -47,8 +58,12 @@
                  web applications that bridge education and technology, showcasing my adaptability and problem-solving skills.
             </p>
         </article>
+        </div>
 
-        <article class="col-md-6 col-lg-4 col-sm-12">
+        <!-- second section for my slider -->
+        <div class="carousel-item text-center  d-flex-column align-content-center m-10 p-10">
+            <div class="col-4"></div>
+        <article class="col-md-6 col-lg-4 col-sm-10">
             <h2>Programming Skills</h2>
             <p>
                 My journey in programming is a tale of continuous growth and innovation. 
@@ -119,30 +134,47 @@
             </table>
             </div>
         </article>
+        <div class="col-4"></div>
+        </div>
 
-        <article class="col-md-6 col-lg-4 col-sm-12">
+        <!-- third section for my slider -->
+
+        <div class="carousel-item text-center d-flex-column align-content-center m-10 p-10">
+        <article class="col-8">
             <h2>Soft Skills</h2>
             <p>With a foundation in empathy and adaptability, my soft skills have flourished through 
                 diverse collaborations and challenging projects. I've honed effective communication and 
                 problem-solving abilities, fostering a dynamic approach to teamwork and a keen capacity for innovation.
             </p>
-            <ul>
+            <ul class=" list-group text-decoration-none">
                 <li>Strong Communication</li>
                 <li>Problem Solving</li>
                 <li>Time Managemnt</li>
                 <li>Team Collaboration</li>
             </ul>
         </article>
+        </div>
+        </div>
+
+        <button class="carousel-control-prev position-absolute start-0" type="button" data-bs-target="#carouselContainer" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next position-absolute end-0" type="button" data-bs-target="#carouselContainer" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div>
 
     </main>
-    <footer class=" bg-dark text-white text-center py-3">
+    <footer class=" fixed-bottom bg-dark text-white text-center py-3">
         <p class="border border-white border-1 d-inline-block p-2">Copyright@nahom 2023</p>
         <div class="d-flex justify-content-center flex-wrap gap-2 text-info">
-        <a href="#" class="text-decoration-none focus-ring info-link ">Home</a>
-        <a href="#" class="text-decoration-none focus-ring info-link">About</a>
-        <a href="#" class="text-decoration-none focus-ring info-link">Experience</a>
-        <a href="#" class="text-decoration-none focus-ring info-link">Contacts</a>
-        <a href="#" class="text-decoration-none focus-ring info-link">Hobbies</a>
+        <a href="home.html" class="text-decoration-none focus-ring info-link ">Home</a>
+        <a href="about.html" class="text-decoration-none focus-ring info-link">About</a>
+        <a href="experience.html" class="text-decoration-none focus-ring info-link">Experience</a>
+        <a href="contact.html" class="text-decoration-none focus-ring info-link">Contacts</a>
+        <a href="hobbies.html" class="text-decoration-none focus-ring info-link">Hobbies</a>
         </div>
     </footer>
     
