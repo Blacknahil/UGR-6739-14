@@ -4,39 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body 	class="bg-slate-700 text-slate-100 md:text-xl text-sm">
     <header>
-        <nav class="navigation_bar">
+        <nav class="p-4 bg-sky-900 p-3.5 py-6 mb-3">
 
-            <input type="checkbox" id="toggle-menu" class="toggle-menu">
-            <label class="menu-icon" for="toggle-menu">&#9776;</label>
+            <div class="container mx-auto flex justify-between items-center">
 
-            <ul class="nav">
-                <li><a href="home.html" >Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="experience.html">Expierence</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="images/resume.pdf" download="nahoms_resume.pdf">Resume</a></li>
+                <div class="block md:hidden">
+            <input type="checkbox" id="toggle-menu" class="toggle-menu hidden">
+            <label class="menu-icon text-white p-2 cursor-pointer" for="toggle-menu">&#9776;</label>
+            </div>
+
+            <ul class=" nav-list hidden md:flex md:space-around space-x-5">
+                <li><a href="home.html" class="text-white md:ml-auto">Home</a></li>
+                <li><a href="about.html" class="text-white md:ml-auto">About</a></li>
+                <li><a href="experience.html" class="text-white md:ml-auto">Expierence</a></li>
+                <li><a href="hobbies.html" class="text-white md:ml-auto">Hobbies</a></li>
+                <li><a href="contact.html" class="text-white md:ml-auto">Contact</a></li>
+                <li><button class="bg-sky-500 hover:bg-sky-700 md:ml-auto"><a href="images/resume.pdf" download="nahoms_resume.pdf">Resume</a></button></li>
             </ul> 
+        </div>
         </nav>
-
+        
     </header>
-
-    <main class="contact_main">
-
+    <main class="pb-20 px-10 grid md:grid-cols-2 sm:grid-cols-1 gap-12 mt-20 my-auto mx-auto">
+        
+        <div>
         <p>I am temporarily in AAU. My permanent residence is in my Home town, Masha,Sheka.</p>
         <address>
             Addis Ababa University 
             5 kilo, Arada, Addis Ababa Ethiopia
         </address>
-        <div class="phone">
-        <img src="images/phone.png" alt="phone-icon">
-        <h2> +251961873109</h2>
+        <div class="flex mt-10">
+        <img src="images/phone.png" alt="phone-icon" class="max-w-20 mr-5">
+        <h2 class="text-2xl my-auto">+251961873109</h2>
+        </div>
         </div>
 
+        <div>
         <p>
             Don't hesitate to get in touch for any questions, project collaborations, or
              even just a casual conversation. Your thoughts are important, and I'm eager to 
@@ -46,17 +53,27 @@
               and look forward to hearing from you soon!
             </p>
 
-        <h3>Contacts</h3>
-        <div class="icon_links">
-        <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebbook icon"></a>
-        <a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter icon"></a>
-        <a href="https://www.linkedin.com/in/nahom-garefo-304306221/"><img src="images/linkidin.png" alt="linkidin-icon"></a>
-        <a href="mailto:nahomgarefo@gmail.com"><img src="images/gmail.png" alt="gmail icon"></a>
+        <h3 class="text-3xl font-semibold pb-5 mt-5">Contacts</h3>
+        <div class="flex justify-around">
+        <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebbook icon" class="max-w-12"></a>
+        <a href="https://twitter.com/"><img src="images/twitter.png" alt="twitter icon" class="max-w-12"></a>
+        <a href="https://www.linkedin.com/in/nahom-garefo-304306221/"><img src="images/linkidin.png" alt="linkidin-icon" class="max-w-12"></a>
+        <a href="mailto:nahomgarefo@gmail.com"><img src="images/gmail.png" alt="gmail icon" class="max-w-12"></a>
+        </div>
+
         </div>
     </main>
 
-    <footer>
-        <p>Copyright@nahom 2023</p>
+    <footer class="bg-sky-950 p-4 fixed bottom-0 left-0 w-full text-center">
+        <p class="">Copyright@nahom 2023</p>
+        <div class=" text-sm flex mt-auto justify-center mt-2">
+        <a href="home.html" class="text-blue-500 hover:text-blue-700 mx-2 ">Home</a>
+        <a href="about.html" class="text-blue-500 hover:text-blue-700 mx-2">About</a>
+        <a href="experience.html" class="text-blue-500 hover:text-blue-700 mx-2">Experience</a>
+        <a href="contact.html" class="text-blue-500 hover:text-blue-700 mx-2">Contacts</a>
+        <a href="hobbies.html" class="text-blue-500 hover:text-blue-700 mx-2">Hobbies</a>
+        </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>

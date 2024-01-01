@@ -4,33 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home </title>
-    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body 	class="bg-slate-700 text-slate-100 md:text-xl text-sm">
     
     <header>
-        <nav class="navigation_bar">
-            <input type="checkbox" id="toggle-menu" class="toggle-menu">
-            <label class="menu-icon" for="toggle-menu">&#9776;</label>
-            <ul class="nav">
-                <li><a href="home.html" >Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="experience.html">Expierence</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="images/resume.pdf" download="nahoms_resume.pdf">Resume</a></li>
+        <nav class="p-4 bg-sky-900 p-3.5 py-6 mb-3">
+
+            <div class="container mx-auto flex justify-between items-center sm:text-xl">
+
+                <div class="block md:hidden">
+            <input type="checkbox" id="toggle-menu" class="toggle-menu hidden">
+            <label class="menu-icon text-white p-2 cursor-pointer" for="toggle-menu">&#9776;</label>
+            </div>
+
+            <ul class=" nav-list hidden md:flex md:space-around space-x-5">
+                <li><a href="home.html" class="text-white md:ml-auto">Home</a></li>
+                <li><a href="about.html" class="text-white md:ml-auto">About</a></li>
+                <li><a href="experience.html" class="text-white md:ml-auto">Expierence</a></li>
+                <li><a href="hobbies.html" class="text-white md:ml-auto">Hobbies</a></li>
+                <li><a href="contact.html" class="text-white md:ml-auto">Contact</a></li>
+                <li><button class="bg-sky-500 hover:bg-sky-700 md:ml-auto rounded-lg"><a href="images/resume.pdf" download="nahoms_resume.pdf">Resume</a></button></li>
             </ul> 
+        </div>
         </nav>
         
-        <div class="current_page">
-        <h1>Home</h1>
-    </div>
+            <div class="bg-blue-900 w-4/6 py-2 ps-5">
+        <h1 class="text-2xl font-bold leading-relaxed ">Home</h1>
+        </div>
     </header>
 
-    <main class="home_main">
-        <img src="images/nahom.jpg" alt="nahom_profile">
+    <main class="pb-20 px-10">
 
-        <p>
+        <div class="container mx-auto grid md:grid-cols-5 gap-10 grid-col-1">
+
+        <div class="col-span-1 md:col-span-2">
+        <img src="images/nahom.jpg" alt="nahom_profile" class="w-full w-auto md:max-h-96 h-auto rounded-lg sm:max-h-96 sm:rounded-md">
+        </div>
+
+        <p class="col-span-1 md:col-span-3">
             My name is nahom Garefo. I am currently a third year software engineering student at <a href="http://www.aau.edu.et/">Addis Ababa University.</a>
             In the realm of coding and programming, my passion burns like a relentless flame, an unwavering devotion that fuels my every endeavor. 
             The world of lines and algorithms is my canvas, and with each keystroke, I paint a masterpiece of logic and innovation.
@@ -42,14 +54,26 @@
              It's not just about writing code; it's about crafting solutions, pushing boundaries, and leaving an indelible mark on the digital landscape. My devotion to this craft is unwavering, 
              a force that propels me towards my goals with an unyielding determination.
             </p>
-            <h4 class="contact_button">
+            </div>
+
+            <div class="col-span-5 flex justify-center items-center mt-4">
+            <button class="bg-sky-500 hover:bg-sky-700 text-white py-2 px-4 rounded-full transition-transform transform hover:scale-105">
                 <a href="contact.html">Contact me</a>
-            </h4>
+            </button>
+            </div>
 
     </main>
 
-    <footer>
-        <p>Copyright@nahom 2023</p>
+    <footer class="bg-sky-950 p-4 fixed bottom-0 left-0 w-full text-center">
+        <p class="">Copyright@nahom 2023</p>
+        <div class=" text-sm flex mt-auto justify-center mt-2">
+        <a href="home.html" class="text-blue-500 hover:text-blue-700 mx-2 ">Home</a>
+        <a href="about.html" class="text-blue-500 hover:text-blue-700 mx-2">About</a>
+        <a href="experience.html" class="text-blue-500 hover:text-blue-700 mx-2">Experience</a>
+        <a href="contact.html" class="text-blue-500 hover:text-blue-700 mx-2">Contacts</a>
+        <a href="hobbies.html" class="text-blue-500 hover:text-blue-700 mx-2">Hobbies</a>
+        </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>

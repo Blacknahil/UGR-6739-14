@@ -4,32 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me </title>
-    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
+<body 	class="bg-slate-700 text-slate-100 md:text-xl text-sm">
     
     <header>
-        <nav class="navigation_bar">
+        <nav class="p-4 bg-sky-900 p-3.5 py-6 mb-3 ">
 
-            <input type="checkbox" id="toggle-menu" class="toggle-menu">
-            <label class="menu-icon" for="toggle-menu">&#9776;</label>
+            <div class="container mx-auto flex justify-between items-center content-end">
 
-            <ul class="nav">
-                <li><a href="home.html" >Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="experience.html">Expierence</a></li>
-                <li><a href="hobbies.html">Hobbies</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="images/resume.pdf" download="nahoms_resume.pdf">Resume</a></li>
+                <div class="block md:hidden">
+            <input type="checkbox" id="toggle-menu" class="toggle-menu hidden">
+            <label class="menu-icon text-white p-2 cursor-pointer" for="toggle-menu">&#9776;</label>
+            </div>
+
+            <ul class=" nav-list hidden md:flex md:space-around space-x-5">
+                <li><a href="home.html" class="text-white md:ml-auto">Home</a></li>
+                <li><a href="about.html" class="text-white md:ml-auto">About</a></li>
+                <li><a href="experience.html" class="text-white md:ml-auto">Expierence</a></li>
+                <li><a href="hobbies.html" class="text-white md:ml-auto">Hobbies</a></li>
+                <li><a href="contact.html" class="text-white md:ml-auto">Contact</a></li>
+                <li><button class="bg-sky-500 hover:bg-sky-700 md:ml-auto"><a href="images/resume.pdf" download="nahoms_resume.pdf">Resume</a></button></li>
             </ul> 
-        </nav>
-        <div class="current_page">
-        <h1>About Nahom </h1>
         </div>
+        </nav>
+        
+        <div class="bg-blue-900 w-4/6 py-2 ps-5">
+        <h1 class="text-2xl font-bold leading-relaxed ">About Nahom</h1>
+        </div>
+
     </header>
 
-    <main>
-        <p>
+    <main class="pb-20 px-10">
+        <div class="grid sm:grid-cols-1 md:grid-cols-2 pt-5 gap-5">
+        <p class="col-span-1 pt-10">
 
             Hailing from a quaint town 600 km south-west of Addis Ababa, my roots were embedded in simplicity,
              with limited access to electricity and the internet. A spark of passion for software engineering was 
@@ -38,13 +46,13 @@
               Driven by the desire to expand my skills and elevate my community, my journey is fueled by a commitment 
             to bring my town into the global digital fold.
         </p>
-        <section class="memory">
-            
-
+        <div class="col-span-1">
         <video controls autoplay muted loop>
             <source src="images/memories.mp4" type="video/mp4">
         </video>
-        <h2>Childhood Memories</h2>
+        </div>
+    </div>
+        <h2 class="text-4xl font-semibold pb-5">Childhood Memories</h2>
 
         <p>
             In the heart of the Ethiopian jungle, I, a wild spirit, thrived with no concept of classrooms. 
@@ -56,8 +64,16 @@
     </section>
     </main>
 
-    <footer>
-        <p>Copyright@nahom 2023</p>
+    <footer class="bg-sky-950 p-4 fixed bottom-0 left-0 w-full text-center">
+        <p class="">Copyright@nahom 2023</p>
+        <div class=" text-sm flex mt-auto justify-center mt-2">
+        <a href="home.html" class="text-blue-500 hover:text-blue-700 mx-2 ">Home</a>
+        <a href="about.html" class="text-blue-500 hover:text-blue-700 mx-2">About</a>
+        <a href="experience.html" class="text-blue-500 hover:text-blue-700 mx-2">Experience</a>
+        <a href="contact.html" class="text-blue-500 hover:text-blue-700 mx-2">Contacts</a>
+        <a href="hobbies.html" class="text-blue-500 hover:text-blue-700 mx-2">Hobbies</a>
+        </div>
     </footer>
+    <script src="js/index.js"></script>
 </body>
 </html>
